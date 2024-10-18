@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Place this data between the <head> tags of your website -->
+		<title>Surprise</title>
+		<meta name="description" content="a very short minigame." />
+		<link rel="icon" type="image/png" href="./favicon.png" />
+
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="surprise!!!" />
+		<meta itemprop="description" content="a very short minigame." />
+		<meta itemprop="image" content="./thumbnail.png" />
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="surprise!!!" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="./thumbnail.png" />
+		<meta property="og:description" content="a very short minigame." />
+		<meta property="og:site_name" content="surprise!!!" />
+
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link
+			rel="stylesheet"
+			href="chrome-extension://bojobppfploabceghnmlahpoonbcbacn/app/content-style.css"
+		/>
+		<audio id="music" src="audio/music.mp3" loop autoplay></audio>
+	</head>
+	<body>
+		<!-- CLOUDS -->
+		<div id="clouds">
+			<div id="x1">
+				<div class="cloud"></div>
+			</div>
+			<div id="x2">
+				<div class="cloud"></div>
+			</div>
+			<div id="x3">
+				<div class="cloud"></div>
+			</div>
+			<div id="x4">
+				<div class="cloud"></div>
+			</div>
+			<div id="x5">
+				<div class="cloud"></div>
+			</div>
+		</div>
+		<!-- PRELOADER -->
+		<div id="loading">
+			<img
+				src="https://gifdb.com/images/high/cinnamoroll-360-x-216-gif-cimkwzzq6nxnz4br.webp"
+				id="loading_img"
+			/>
+			<h1 id="loading_text">Loading...</h1>
+		</div>
+
+		<!--GAME-->
+		<div id="whole_container">
+			<!--TITLE SCREEN-->
+			<div id="screen_one">
+				<canvas id="canvas_intro"></canvas>
+			</div>
+
+			<!--MINIGAME-->
+			<div id="screen_two">
+				<div id="canvas_container">
+					<canvas id="canvas_1" width="300" height="380"></canvas>
+					<canvas id="canvas_2" width="300" height="380"></canvas>
+					<canvas id="canvas_3" width="300" height="380" style="margin: 0"></canvas>
+
+					<div id="HBD_text"></div>
+					<div id="rewind_text">rewinding...</div>
+					<div id="replay_text">playing back...</div>
+				</div>
+			</div>
+
+			<!--END SCREEN-->
+			<div id="screen_three">
+				<audio id="pop" src="audio/pop.mp3"></audio>
+				<canvas id="canvas_confetti"></canvas>
+				<div id="end_container">
+					<img
+						src="https://64.media.tumblr.com/fc75069f8a569dd942aaec104e16ffa0/380b43298a359147-a6/s250x400/f5f0177bd0bcaac922703ddcd3baa1e5dfe88cc5.gifv"
+						id="HBD_img"
+					/>
+					<div id="HBD_msg">
+						Happy Happy Birthday to my baby, I love you so much mahal and I always
+						choose you. I'm here with you and love you much more than you think.
+						I'll be here to support you, help you and be with you. You will always
+						be more precious than you think, I hope you have more blessings,
+						Birthdays, Anniversaries and a GOD fearing heart.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="js/Key.js"></script>
+<script src="js/game.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/confetti.js"></script>
+<script src="js/soundjs-0.6.0.min.js"></script>
+
+<script>
+	//STAGE = 4;
+</script>
